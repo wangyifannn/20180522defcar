@@ -34,7 +34,7 @@ $.ajax({
                         '</div>' +
                         '</li>';
                 } else {
-                    menuli_ulli += '<li class="li_a ' + res[i].childrenMenus[k].url + '"><a href="../../../car/20180522defcar/html/' + res[i].childrenMenus[k].url + '.html#html=' + res[i].childrenMenus[k].url + '">' + res[i].childrenMenus[k].name + '</a> </li>';
+                    menuli_ulli += '<li class="li_a ' + res[i].childrenMenus[k].url + '"><a href="../../../20180522defcar/html/' + res[i].childrenMenus[k].url + '.html#html=' + res[i].childrenMenus[k].url + '">' + res[i].childrenMenus[k].name + '</a> </li>';
                 }
                 $(".menuli_ulli" + i).html(menuli_ulli);
             }
@@ -80,11 +80,6 @@ $.ajax({
                 }
             }
         });
-
-        //驾驶员管理
-        // $(".driverList").click(function() {
-        //     loadDriverList();
-        // });
     },
     "error": function(data) {
         // window.location.href = "../../../car/CarMangae0/html/login.html";
